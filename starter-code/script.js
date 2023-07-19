@@ -10,8 +10,6 @@ menu.addEventListener("click", function () {
   planetsList.classList.toggle("sma:-translate-x-full");
   planetsList.classList.toggle("sma:opacity-0");
   planetsList.classList.toggle("sma:invisible");
-
-  console.log("menu");
 });
 
 const renderPlanets = function (data) {
@@ -24,8 +22,6 @@ const renderPlanets = function (data) {
   if (data.name === "Saturn") color = "rich-orange";
   if (data.name === "Uranus") color = "teal";
   if (data.name === "Neptune") color = "dark-blue";
-  console.log(data);
-  console.log(`sma:border-${color}`);
   const html = `
           <section
           class="grid grid-cols-2 justify-items-center pt-52 items-center pb-36 planet-section pl-16 lag:grid-cols-1 lag:px-16 mid:gap-y-20 xs:px-8 sma:relative sma:pb-20"
@@ -472,7 +468,6 @@ const getPlanets = async function () {
   try {
     const res = await fetch("data.json");
     const data = await res.json();
-    // console.log(data);
     return data;
   } catch (err) {
     console.log(err);
@@ -481,7 +476,6 @@ const getPlanets = async function () {
 getPlanets();
 
 let selectedPlanetData = null;
-console.log(selectedPlanetData);
 
 (async function () {
   const data = await getPlanets();
