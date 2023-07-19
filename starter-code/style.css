@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+
+.link-style {
+  @apply text-1.1rem leading-2.5rem font-700 font-spartan tracking-0.1rem uppercase pt-10 relative;
+}
+
+.link-style::before {
+  @apply before:absolute before:w-full before:h-2 before:top-0 before:hidden before:content-[''];
+}
+
+.mercury:before {
+  @apply bg-vibrant-blue;
+}
+.venus:before {
+  @apply bg-warm-orange;
+}
+
+.earth::before {
+  @apply bg-deep-purple;
+}
+
+.mars::before {
+  @apply bg-bold-red-orange;
+}
+.jupiter::before {
+  @apply bg-bright-red;
+}
+.saturn::before {
+  @apply bg-rich-orange;
+}
+.uranus::before {
+  @apply bg-teal;
+}
+.neptune::before {
+  @apply bg-dark-blue;
+}
+
+.link-style:hover::before {
+  @apply block;
+}
+
+.link-style:active::before {
+  @apply block;
+}
+
+.group:hover .link-style:not(:hover) {
+  opacity: 0.75;
+}

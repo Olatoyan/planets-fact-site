@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Planets fact site</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body
+    class="bg-very-dark-blue min-h-screen text-white"
+    style="background-image: url('assets/background-stars.svg')"
+  >
+    <div>
+      <nav
+        class="flex items-center justify-between pb-10 px-12 border-b border-white border-opacity-20 mid:flex-col mid:items-center sma:flex-row sma:relative xs:px-8"
+      >
+        <h2
+          class="uppercase text-2.8rem leading-norm -tracking-0.105rem font-400 font-antonio pt-10"
+        >
+          The planets
+        </h2>
+        <ul
+          id="planet-list"
+          class="group flex items-center gap-12 sma:flex-col sma:items-start sma:fixed sma:top-36 sma:pl-8 sma:pr-24 sma:bg-very-dark-blue sma:w-full sma:z-10 sma:gap-0 sma:min-h-screen sma:-translate-x-full sma:opacity-0 sma:invisible sma:transition-all sma:duration-500"
+        >
+          <li
+            class="pt-10 text-1.5rem leading-2.5rem font-700 font-spartan tracking-0.1rem uppercase relative before:absolute before:w-full before:h-2 before:top-0 before:hidden before:content-[''] before:bg-vibrant-blue hover:before:block active:before:block cursor-pointer mercury planet sma:before:w-8 sma:before:h-8 sma:before:rounded-full sma:before:left-0 sma:before:top-1/2 sma:before:-translate-y-1/2 sma:before:block sma:flex sma:items-center sma:justify-between sma:w-full sma:p-10 sma:pl-20 sma:border-b sma:border-white sma:border-opacity-40"
+          >
+            <a href="#">Mercury</a>
+            <img
+              src="assets/icon-chevron.svg"
+              alt="icon-chevron"
+              class="hidden sma:block"
+            />
+          </li>
+          <li
+            class="pt-10 text-1.5rem leading-2.5rem font-700 font-spartan tracking-0.1rem uppercase relative before:absolute before:w-full before:h-2 before:top-0 before:hidden before:content-[''] before:bg-warm-orange hover:before:block cursor-pointer venus planet sma:before:w-8 sma:before:h-8 sma:before:rounded-full sma:before:left-0 sma:before:top-1/2 sma:before:-translate-y-1/2 sma:before:block sma:flex sma:items-center sma:justify-between sma:w-full sma:p-10 sma:pl-20 sma:border-b sma:border-white sma:border-opacity-40"
+          >
+            <a href="#">Venus</a>
+            <img
+              src="assets/icon-chevron.svg"
+              alt="icon-chevron"
+              class="hidden sma:block"
+            />
+          </li>
+          <li
+            class="pt-10 text-1.5rem leading-2.5rem font-700 font-spartan tracking-0.1rem uppercase relative before:absolute before:w-full before:h-2 before:top-0 before:hidden before:content-[''] before:bg-deep-purple hover:before:block cursor-pointer earth planet sma:before:w-8 sma:before:h-8 sma:before:rounded-full sma:before:left-0 sma:before:top-1/2 sma:before:-translate-y-1/2 sma:before:block sma:flex sma:items-center sma:justify-between sma:w-full sma:p-10 sma:pl-20 sma:border-b sma:border-white sma:border-opacity-40"
+          >
+            <a href="#">Earth</a>
+            <img
+              src="assets/icon-chevron.svg"
+              alt="icon-chevron"
+              class="hidden sma:block"
+            />
+          </li>
+          <li
+            class="pt-10 text-1.5rem leading-2.5rem font-700 font-spartan tracking-0.1rem uppercase relative before:absolute before:w-full before:h-2 before:top-0 before:hidden before:content-[''] before:bg-bold-red-orange hover:before:block cursor-pointer mars planet sma:before:w-8 sma:before:h-8 sma:before:rounded-full sma:before:left-0 sma:before:top-1/2 sma:before:-translate-y-1/2 sma:before:block sma:flex sma:items-center sma:justify-between sma:w-full sma:p-10 sma:pl-20 sma:border-b sma:border-white sma:border-opacity-40"
+          >
+            <a href="#">Mars</a>
+            <img
+              src="assets/icon-chevron.svg"
+              alt="icon-chevron"
+              class="hidden sma:block"
+            />
+          </li>
+          <li
+            class="pt-10 text-1.5rem leading-2.5rem font-700 font-spartan tracking-0.1rem uppercase relative before:absolute before:w-full before:h-2 before:top-0 before:hidden before:content-[''] before:bg-bright-red hover:before:block cursor-pointer jupiter planet sma:before:w-8 sma:before:h-8 sma:before:rounded-full sma:before:left-0 sma:before:top-1/2 sma:before:-translate-y-1/2 sma:before:block sma:flex sma:items-center sma:justify-between sma:w-full sma:p-10 sma:pl-20 sma:border-b sma:border-white sma:border-opacity-40"
+          >
+            <a href="#">Jupiter</a>
+            <img
+              src="assets/icon-chevron.svg"
+              alt="icon-chevron"
+              class="hidden sma:block"
+            />
+          </li>
+          <li
+            class="pt-10 text-1.5rem leading-2.5rem font-700 font-spartan tracking-0.1rem uppercase relative before:absolute before:w-full before:h-2 before:top-0 before:hidden before:content-[''] before:bg-rich-orange hover:before:block cursor-pointer saturn planet sma:before:w-8 sma:before:h-8 sma:before:rounded-full sma:before:left-0 sma:before:top-1/2 sma:before:-translate-y-1/2 sma:before:block sma:flex sma:items-center sma:justify-between sma:w-full sma:p-10 sma:pl-20 sma:border-b sma:border-white sma:border-opacity-40"
+          >
+            <a href="#">Saturn</a>
+            <img
+              src="assets/icon-chevron.svg"
+              alt="icon-chevron"
+              class="hidden sma:block"
+            />
+          </li>
+          <li
+            class="pt-10 text-1.5rem leading-2.5rem font-700 font-spartan tracking-0.1rem uppercase relative before:absolute before:w-full before:h-2 before:top-0 before:hidden before:content-[''] before:bg-teal hover:before:block cursor-pointer uranus planet sma:before:w-8 sma:before:h-8 sma:before:rounded-full sma:before:left-0 sma:before:top-1/2 sma:before:-translate-y-1/2 sma:before:block sma:flex sma:items-center sma:justify-between sma:w-full sma:p-10 sma:pl-20 sma:border-b sma:border-white sma:border-opacity-40"
+          >
+            <a href="#">Uranus</a>
+            <img
+              src="assets/icon-chevron.svg"
+              alt="icon-chevron"
+              class="hidden sma:block"
+            />
+          </li>
+          <li
+            class="pt-10 text-1.5rem leading-2.5rem font-700 font-spartan tracking-0.1rem uppercase relative before:absolute before:w-full before:h-2 before:top-0 before:hidden before:content-[''] before:bg-dark-blue hover:before:block cursor-pointer neptune planet sma:before:w-8 sma:before:h-8 sma:before:rounded-full sma:before:left-0 sma:before:top-1/2 sma:before:-translate-y-1/2 sma:before:block sma:flex sma:items-center sma:justify-between sma:w-full sma:p-10 sma:pl-20"
+          >
+            <a href="#">Neptune</a>
+            <img
+              src="assets/icon-chevron.svg"
+              alt="icon-chevron"
+              class="hidden sma:block"
+            />
+          </li>
+        </ul>
+        <img
+          src="assets/icon-hamburger.svg"
+          alt="menu"
+          class="hidden sma:block menu"
+        />
+      </nav>
+      <main>
+        <section
+          class="grid grid-cols-2 justify-items-center pt-52 items-center pb-36 planet-section"
+        >
+          <div class="relative">
+            <img src="assets/planet-mercury.svg" alt="mercury" />
+            <!-- <div class="w-64 absolute bottom-8 left-1/2 -translate-x-1/2">
+              <img
+                src="assets/geology-mercury.png"
+                alt="mercury"
+                class="object-cover"
+              />
+            </div> -->
+          </div>
+          <div class="flex flex-col pl-60 pr-72 xlg:px-40 gap-20">
+            <div class="flex flex-col gap-10">
+              <h1
+                class="text-8rem font-antonio font-400 leading-norm uppercase primary-heading"
+              >
+                Mercury
+              </h1>
+              <p class="font-spartan text-1.8rem leading-2.5rem font-400">
+                Mercury is the smallest planet in the Solar System and the
+                closest to the Sun. Its orbit around the Sun takes 87.97 Earth
+                days, the shortest of all the Sun's planets. Mercury is one of
+                four terrestrial planets in the Solar System, and is a rocky
+                body like Earth.
+              </p>
+              <div
+                class="flex items-center font-spartan text-1.4rem leading-2.5rem font-400 opacity-50"
+              >
+                <span> Source :</span>
+                <a
+                  href="https://en.wikipedia.org/wiki/Mercury_(planet) "
+                  class="underline font-700 pr-3"
+                  target="_blank"
+                >
+                  Wikipedia</a
+                >
+                <img src="assets/icon-source.svg" alt="source" />
+              </div>
+            </div>
+            <div class="flex flex-col gap-7 more-info-box">
+              <div
+                class="flex items-center gap-12 cursor-pointer bg-vibrant-blue py-5 px-11 overview"
+              >
+                <p
+                  class="text-1.2rem font-700 leading-2.5rem tracking-0.2571rem uppercase font-spartan opacity-50"
+                >
+                  01
+                </p>
+                <p
+                  class="text-1.2rem font-700 leading-2.5rem tracking-0.2571rem uppercase font-spartan"
+                >
+                  Overview
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-12 py-5 px-11 border border-white border-opacity-20 cursor-pointer hover:bg-silver-gray hover:bg-opacity-20 hover:border-silver-gray hover:border-opacity-0 internal"
+              >
+                <p
+                  class="text-1.2rem font-700 leading-2.5rem tracking-0.2571rem uppercase font-spartan opacity-50"
+                >
+                  02
+                </p>
+                <p
+                  class="text-1.2rem font-700 leading-2.5rem tracking-0.2571rem uppercase font-spartan"
+                >
+                  Internal Structure
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-12 py-5 px-11 border border-white border-opacity-20 cursor-pointer hover:bg-silver-gray hover:bg-opacity-20 hover:border-silver-gray hover:border-opacity-0 geology"
+              >
+                <p
+                  class="text-1.2rem font-700 leading-2.5rem tracking-0.2571rem uppercase font-spartan opacity-50"
+                >
+                  03
+                </p>
+                <p
+                  class="text-1.2rem font-700 leading-2.5rem tracking-0.2571rem uppercase font-spartan"
+                >
+                  Surface Geology
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="grid grid-cols-4 gap-12 pr-72 pl-60 pb-24">
+          <div
+            class="flex flex-col gap-2 pt-8 pb-11 px-9 border-white border border-opacity-50"
+          >
+            <h3
+              class="text-1.1rem font-700 font-spartan leading-2.5rem tracking-0.1rem uppercase opacity-50"
+            >
+              Rotation Time
+            </h3>
+            <p
+              class="text-4rem uppercase font-antonio font-400 leading-norm -tracking-0.15rem"
+            >
+              58.6 days
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-2 pt-8 pb-11 px-9 border-white border border-opacity-50"
+          >
+            <h3
+              class="text-1.1rem font-700 font-spartan leading-2.5rem tracking-0.1rem uppercase opacity-50"
+            >
+              Revolution Time
+            </h3>
+            <p
+              class="text-4rem uppercase font-antonio font-400 leading-norm -tracking-0.15rem"
+            >
+              87.97 days
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-2 pt-8 pb-11 px-9 border-white border border-opacity-50"
+          >
+            <h3
+              class="text-1.1rem font-700 font-spartan leading-2.5rem tracking-0.1rem uppercase opacity-50"
+            >
+              Radius
+            </h3>
+            <p
+              class="text-4rem uppercase font-antonio font-400 leading-norm -tracking-0.15rem"
+            >
+              2,439.7 KM
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-2 pt-8 pb-11 px-9 border-white border border-opacity-50"
+          >
+            <h3
+              class="text-1.1rem font-700 font-spartan leading-2.5rem tracking-0.1rem uppercase opacity-50"
+            >
+              Average Temp.
+            </h3>
+            <p
+              class="text-4rem uppercase font-antonio font-400 leading-norm -tracking-0.15rem"
+            >
+              430°c
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

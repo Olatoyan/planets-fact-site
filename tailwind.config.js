@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./starter-code/*.{html,js}"],
+  theme: {
+    extend: {
+      colors: {
+        "very-dark-blue": "#070724",
+        "dark-blue-purple": "#38384F",
+        "light-grey-blue": "#838391",
+        "vibrant-blue": "#419EBB",
+        "warm-orange": "#EDA249",
+        "deep-purple": "#6D2ED5",
+        "bold-red-orange": "#D14C32",
+        "bright-red": "#D83A34",
+        "rich-orange": "#CD5120",
+        teal: "#1EC1A2",
+        "dark-blue": "#2D68F0",
+        "silver-gray": "#D8D8D8",
+      },
+      fontFamily: {
+        antonio: ["Antonio", "sans-serif"],
+        spartan: ["League Spartan", "sans-serif"],
+      },
+      fontSize: {
+        "0.8rem": "0.8rem",
+        "0.9rem": "0.9rem",
+        "1.1rem": "1.1rem",
+        "1.2rem": "1.2rem",
+        "1.4rem": "1.4rem",
+        "1.5rem": "1.5rem",
+        "1.8rem": "1.8rem",
+        "2rem": "2rem",
+        "2.4rem": "2.4rem",
+        "2.8rem": "2.8rem",
+        "3rem": "3rem",
+        "4rem": "4rem",
+        "4.8rem": "4.8rem",
+        "8rem": "8rem",
+      },
+      fontWeight: {
+        400: "400",
+        700: "700",
+      },
+      lineHeight: {
+        "1.6rem": "1.6rem",
+        "2.2rem": "2.2rem",
+        "2.5rem": "2.5rem",
+        norm: "normal",
+      },
+
+      letterSpacing: {
+        "-0.09rem": "-0.09rem",
+        "-0.075rem": "-0.075rem",
+        "-0.105rem": "-0.105rem",
+        "-0.15rem": "-0.15rem",
+        "0.0727rem": "0.0727rem",
+        "0.1929rem": "0.1929rem",
+        "0.1364rem": "0.1364rem",
+        "0.1rem": "0.1rem",
+        "0.2571rem": "0.2571rem",
+      },
+      screens: {
+        xlg: { max: "81.25em" },
+        lag: { max: "68.75em" },
+        slag: { max: "62.5em" },
+        mid: { max: "56.25em" },
+        sma: { max: "41.25em" },
+        xs: { max: "31.25em" },
+      },
+    },
+  },
+  plugins: [],
+};
